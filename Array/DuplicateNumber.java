@@ -6,7 +6,7 @@ import java.util.List;
 
 public class DuplicateNumber {
     public static void main(String[] args) {
-        int [] arr={2,5,3,2,5};
+        int [] arr={2,2,3,2,5};
         
         
         List<Integer> li= new ArrayList<>();
@@ -24,6 +24,7 @@ public class DuplicateNumber {
         for(int i=0; i<arr.length-1; i++){
             if(arr[i]==arr[i+1]){
                 li.add(arr[i]);
+                i++;
             }
         }
         System.out.println(li);
